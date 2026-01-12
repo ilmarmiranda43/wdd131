@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 – Dynamic Web Fundamentals – Ilmar Miranda</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals" />
+  <meta name="author" content="Ilmar Miranda" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>WDD 131 - Ilmar Miranda</h1>
+  <header class="site-header">
+    <div class="topbar">
+      <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+    </div>
+    <nav class="nav-container">
+        <ul>
+            <li><a href="https://www.linkedin.com/feed/">LinkedIn</a></li>
+            <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+            <li><a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/123?lang=eng">Scripture</a>
+            </li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h1 class="page-title">Ilmar Miranda</h1>
+
+    <div class="cards">
+      <!-- Card 1 -->
+      <section class="card">
+        <h2 class="card-title">About Me</h2>
+        <div class="card-body">
+          <div class="about-grid">
+            <p>
+              My name is Ilmar and I go by Ilmar. I live in Brazil.
+              I love learning web development and building projects.
+              (Troque este texto pelo seu.)
+            </p>
+
+            <figure class="profile">
+              <img src="images/profile.jpeg" alt="Profile photo" />
+            </figure>
+          </div>
+
+          <h3 class="subheading">São Paulo, Brazil</h3>
+          <div class="divider"></div>
+
+          <div class="place-grid">
+            <figure class="flag">
+              <img src="images/flag_brasil.png" alt="Brazil flag" />
+              <figcaption>Official Flag of Brazil</figcaption>
+            </figure>
+
+            <p>
+              Brazil is the largest country in South America. It is known for its
+              diverse culture, amazing nature, and beautiful landscapes.
+              (Troque este texto também.)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card 2 -->
+      <section class="card">
+        <h2 class="card-title">Web Dev Resources</h2>
+        <div class="card-body">
+          <ul class="resources">
+            <li><a href="https://developer.chrome.com/docs/devtools?hl=pt-br" target="_blank">DevTools</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3 Schools</a></li>
+            <li><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Udemy</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section class="mogi">
+          <h2>Mogi das Cruzes, São Paulo - Brasil</h2>
+          <div class="mogi-content">
+              <img src="images/flag_brasil.png" alt="Official Flag of Brasil">
+              <p>Mogi das Cruzes is a city located in the eastern part of São Paulo state, Brazil, approximately 40
+                  kilometers (25 miles) northeast of São Paulo city.
+                  It covers an area of about 713 square kilometers (275 square miles).
+                  The city was founded on August 1, 1560, by Jesuit priests, and its name "Mogi das Cruzes" comes from the
+                  Tupi-Guarani language,
+                  meaning river of snakes or river of serpents.</p>
+          </div>
+      </section> -->
+
+
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>©<span id="currentyear"></span> 🌎 Ilmar Miranda 🌎 São Paulo</p>
+    <p class="last-mod">Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
 </body>
 </html>
