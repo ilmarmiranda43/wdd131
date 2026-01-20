@@ -12,10 +12,6 @@ nav ul {
     max-width: 600px;
 }
 
-main {
-    padding: 2rem;
-}
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
