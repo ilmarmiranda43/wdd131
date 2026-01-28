@@ -1,75 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Place - Brazil</title>
-
-  <meta name="description" content="Discover Brazil, its culture, geography, and weather.">
-  <meta name="author" content="Ilmar Miranda">
-
-  <link rel="stylesheet" href="styles/place.css">
-  <script src="scripts/place.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A site to show some curiosities and knowledged about Brazil">
+    <meta name="author" content="Ilmar Miranda">
+    <meta name="keywords" content="brazil,country, brazilian, portuguese">
+    <title> knowing about Brazil</title>
+    <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-
-<header>
-  <h1>Brazil</h1>
-</header>
-
-<main class="container">
-
-  <!-- Hero Image -->
-  <picture class="hero">
-    <source srcset="images/brazil.webp" type="image/webp">
-    <img src="images/brazil.jpg" alt="Landscape of Brazil" loading="lazy">
-  </picture>
-
-  <!-- Data Section -->
-  <section class="card">
-    <h2>Data</h2>
-    <ul>
-      <li><strong>Area:</strong> 8,515,767 km²</li>
-      <li><strong>Population:</strong> 203 million</li>
-      <li><strong>Capital:</strong> Brasília</li>
-      <li><strong>Languages:</strong> Portuguese</li>
-      <li><strong>Currency:</strong> Brazilian Real (R$)</li>
-      <li><strong>Time Zone:</strong> UTC-2 to UTC-5</li>
-      <li><strong>Calling Code:</strong> +55</li>
-      <li><strong>Internet TLD:</strong> .br</li>
-    </ul>
-  </section>
-
-  <!-- Weather Section -->
-  <section class="card weather">
-    <h2>Weather ⛅</h2>
-
-    <div class="weather-grid">
-      <img src="images/weather.svg" alt="Weather icon">
-
-      <ul>
-        <li><strong>Temperature:</strong> <span id="temp">18</span> °C</li>
-        <li><strong>Wind Speed:</strong> <span id="wind">12</span> km/h</li>
-        <li><strong>Wind Chill:</strong> <span id="chill">--</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Map -->
-  <section class="map">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25238254.85735245!2d-53.200158!3d-14.235004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdc77c83c1b07b5%3A0xe34d4c9aefeb10b!2sBrazil!5e0!3m2!1sen!2sbr!4v1700000000000" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </section>
-
-</main>
-
-<footer>
-  <p>© <span id="year"></span> 🇧🇷 Ilmar Miranda 🇧🇷 São Paulo</p>
-  <p>Last Modified: <span id="modified"></span></p>
-</footer>
-
+    <header>
+        <h1>Brazil</h1>
+    </header>
+    <main>
+        <section class="image-section">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/cristo-rendentor-small.webp">
+                <source media="(min-width: 769px)" srcset="images/cristoredentor.webp">
+                <img src="images/cristoredentor.webp" alt="Christ the Redeemer">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 8,515,767 km²</p>
+            <p><strong>Population:</strong> 213,993,437</p>
+            <p><strong>Capital:</strong> Brasília</p>
+            <p><strong>Languages:</strong> Portuguese</p>
+            <p><strong>Currency:</strong> Brazilian Real (BRL)</p>
+            <p><strong>Time Zone:</strong> UTC-3</p>
+            <p><strong>Calling Code:</strong> +55</p>
+            <p><strong>Internet TLD:</strong> .br</p>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/1530392_weather_sun_sunny_temperature_icon.svg" alt="Weather Icon">
+            <p><strong>Temperature:</strong> 10°C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> 5 km/h</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year">2026</span> <span>Ilmar Miranda</span> <span class="location">Brasil</span>
+        </p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
 </body>
+
 </html>
