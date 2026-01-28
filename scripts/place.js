@@ -17,5 +17,6 @@ if (temp <= 10 && wind > 4.8) {
   chill.textContent = "N/A";
 }
 
+// Footer
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("modified").textContent = document.lastModified;

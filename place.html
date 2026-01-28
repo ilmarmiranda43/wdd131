@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Place - Madagascar</title>
+  <title>Place - Brazil</title>
 
-  <meta name="description" content="Discover Madagascar, its culture, geography, and weather.">
+  <meta name="description" content="Discover Brazil, its culture, geography, and weather.">
   <meta name="author" content="Ilmar Miranda">
 
   <link rel="stylesheet" href="styles/place.css">
@@ -14,30 +14,33 @@
 <body>
 
 <header>
-  <h1>Madagascar</h1>
+  <h1>Brazil</h1>
 </header>
 
 <main class="container">
-  
+
+  <!-- Hero Image -->
   <picture class="hero">
-    <source srcset="images/madagascar.webp" type="image/webp">
-    <img src="images/madagascar.jpg" alt="Landscape of Madagascar" loading="lazy">
+    <source srcset="images/brazil.webp" type="image/webp">
+    <img src="images/brazil.jpg" alt="Landscape of Brazil" loading="lazy">
   </picture>
-  
+
+  <!-- Data Section -->
   <section class="card">
     <h2>Data</h2>
     <ul>
-      <li><strong>Area:</strong> 587,041 km²</li>
-      <li><strong>Population:</strong> 28 million</li>
-      <li><strong>Capital:</strong> Antananarivo</li>
-      <li><strong>Languages:</strong> Malagasy, French</li>
-      <li><strong>Currency:</strong> Ariary</li>
-      <li><strong>Time Zone:</strong> UTC+3</li>
-      <li><strong>Calling Code:</strong> +261</li>
-      <li><strong>Internet TLD:</strong> .mg</li>
+      <li><strong>Area:</strong> 8,515,767 km²</li>
+      <li><strong>Population:</strong> 203 million</li>
+      <li><strong>Capital:</strong> Brasília</li>
+      <li><strong>Languages:</strong> Portuguese</li>
+      <li><strong>Currency:</strong> Brazilian Real (R$)</li>
+      <li><strong>Time Zone:</strong> UTC-2 to UTC-5</li>
+      <li><strong>Calling Code:</strong> +55</li>
+      <li><strong>Internet TLD:</strong> .br</li>
     </ul>
   </section>
-  
+
+  <!-- Weather Section -->
   <section class="card weather">
     <h2>Weather ⛅</h2>
 
@@ -45,16 +48,17 @@
       <img src="images/weather.svg" alt="Weather icon">
 
       <ul>
-        <li><strong>Temperature:</strong> <span id="temp">10</span> °C</li>
-        <li><strong>Wind Speed:</strong> <span id="wind">5</span> km/h</li>
+        <li><strong>Temperature:</strong> <span id="temp">18</span> °C</li>
+        <li><strong>Wind Speed:</strong> <span id="wind">12</span> km/h</li>
         <li><strong>Wind Chill:</strong> <span id="chill">--</span></li>
       </ul>
     </div>
   </section>
-  
+
+  <!-- Map -->
   <section class="map">
     <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12674442.318210045!2d38.045694!3d-18.766947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f28c1f7c64d2d1%3A0x6dbb31fefc9d73fa!2sMadagascar!5e0!3m2!1sen!2sbr!4v1700000000000" 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25238254.85735245!2d-53.200158!3d-14.235004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdc77c83c1b07b5%3A0xe34d4c9aefeb10b!2sBrazil!5e0!3m2!1sen!2sbr!4v1700000000000" 
       allowfullscreen="" 
       loading="lazy">
     </iframe>
@@ -63,7 +67,7 @@
 </main>
 
 <footer>
-  <p>© <span id="year"></span> 🌎 Ilmar Miranda 🌎 São Paulo</p>
+  <p>© <span id="year"></span> 🇧🇷 Ilmar Miranda 🇧🇷 São Paulo</p>
   <p>Last Modified: <span id="modified"></span></p>
 </footer>
 
