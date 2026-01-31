@@ -1,0 +1,147 @@
+:root {
+  --max: 1100px;
+  --bg: #0f172a;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #a1a1aa;
+  --accent: #38bdf8;
+  --border: rgba(255,255,255,0.10);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, #0b1023, #0f172a);
+  color: var(--text);
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.site-header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(0,0,0,0.20);
+}
+
+.brand {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.nav {
+  max-width: var(--max);
+  margin: 0.75rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+}
+
+.nav a:hover {
+  border-color: rgba(56,189,248,0.6);
+}
+
+.nav a.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(56,189,248,0.15);
+}
+
+.content {
+  width: min(var(--max), calc(100% - 2rem));
+  margin: 1.25rem auto 2rem;
+}
+
+.content h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.card header {
+  padding: 0.9rem 0.9rem 0;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.meta {
+  padding: 0.9rem;
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.meta span strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: rgba(0,0,0,0.25);
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1rem;
+  text-align: center;
+  color: var(--muted);
+  background: rgba(0,0,0,0.18);
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .brand { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 560px) {
+  .cards { grid-template-columns: 1fr; }
+}
