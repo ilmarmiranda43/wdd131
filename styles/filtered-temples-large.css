@@ -1,0 +1,8 @@
+/* styles/filtered-temples-large.css */
+/* Regras extras para telas grandes (opcional) */
+
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
