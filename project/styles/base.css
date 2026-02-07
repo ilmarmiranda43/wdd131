@@ -21,6 +21,11 @@ body{
 
 img{ max-width:100%; height:auto; display:block; }
 
+#featured-grid, #guides-grid {
+  min-height: 520px; 
+}
+
+
 .wrap{ width:min(1050px, 92vw); margin-inline:auto; }
 
 .site-header{
