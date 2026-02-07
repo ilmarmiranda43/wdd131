@@ -1,0 +1,198 @@
+:root{
+  --primary:#1F6FEB;
+  --secondary:#0E1116;
+  --bg:#0b1220;
+  --card:#0f172a;
+  --text:#e6edf3;
+  --muted:#a9b7c6;
+  --border:rgba(255,255,255,.12);
+  --ring:rgba(31,111,235,.35);
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  background:linear-gradient(180deg,var(--bg),#070b12);
+  color:var(--text);
+  line-height:1.6;
+}
+
+img{ max-width:100%; height:auto; display:block; }
+
+.wrap{ width:min(1050px, 92vw); margin-inline:auto; }
+
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(14,17,22,.88);
+  backdrop-filter: blur(8px);
+  border-bottom:1px solid var(--border);
+}
+
+.header-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 0;
+}
+
+.brand{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  color:var(--text);
+  text-decoration:none;
+  font-weight:700;
+}
+
+.site-nav{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.site-nav a{
+  color:var(--muted);
+  text-decoration:none;
+  padding:8px 10px;
+  border-radius:10px;
+}
+.site-nav a:hover{ color:var(--text); background:rgba(255,255,255,.06); }
+.site-nav a.active{ color:var(--text); background:rgba(31,111,235,.18); }
+
+.nav-toggle{
+  display:none;
+  background:transparent;
+  border:1px solid var(--border);
+  color:var(--text);
+  padding:8px 10px;
+  border-radius:10px;
+}
+
+main{ padding:18px 0 28px; }
+
+.section{ display:grid; gap:14px; }
+.section-head h1, .section-head h2{ margin:0; }
+.section-head p{ margin:.25rem 0 0; }
+
+.hero{
+  display:grid;
+  gap:14px;
+  align-items:center;
+  grid-template-columns: 1fr;
+  padding:10px 0 6px;
+}
+.hero-media img{
+  border-radius:18px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.03);
+}
+.hero-copy h1{ margin:0 0 8px; font-size:clamp(1.45rem, 2.8vw, 2.1rem); }
+.hero-copy p{ margin:0 0 12px; color:var(--muted); }
+.hero-actions{ display:flex; flex-wrap:wrap; gap:10px; }
+
+.grid{
+  display:grid;
+  gap:12px;
+  grid-template-columns: 1fr;
+}
+
+.split{
+  display:grid;
+  gap:12px;
+  grid-template-columns: 1fr;
+}
+
+.card{
+  background:rgba(15,23,42,.88);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:16px;
+}
+
+.btn{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  padding:10px 12px;
+  border-radius:12px;
+  background:var(--primary);
+  color:white;
+  text-decoration:none;
+  border:1px solid rgba(255,255,255,.08);
+  font-weight:600;
+}
+.btn:hover{ filter:brightness(1.05); }
+.btn-ghost{
+  background:transparent;
+  color:var(--text);
+  border:1px solid var(--border);
+}
+.btn-ghost:hover{ background:rgba(255,255,255,.06); }
+
+.link{ color:var(--text); }
+.muted{ color:var(--muted); }
+.micro{ font-size:.95rem; color:var(--muted); margin:.35rem 0 0; }
+
+.field{
+  display:grid;
+  gap:6px;
+  margin-bottom:12px;
+}
+.field span{ color:var(--muted); font-size:.95rem; }
+
+input, select, textarea{
+  width:100%;
+  padding:10px 10px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:rgba(0,0,0,.22);
+  color:var(--text);
+  outline:none;
+}
+input:focus, select:focus, textarea:focus{
+  border-color:rgba(31,111,235,.6);
+  box-shadow:0 0 0 4px var(--ring);
+}
+
+.sep{
+  border:0;
+  border-top:1px solid var(--border);
+  margin:14px 0;
+}
+
+.site-footer{
+  border-top:1px solid var(--border);
+  background:rgba(14,17,22,.65);
+}
+.footer-row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:10px;
+  padding:14px 0 18px;
+}
+.site-footer a{ color:var(--text); }
+
+/* Responsive */
+@media (min-width: 760px){
+  .hero{ grid-template-columns: 1.2fr .8fr; }
+  .grid{ grid-template-columns: repeat(3, 1fr); }
+  .split{ grid-template-columns: 1.1fr .9fr; }
+}
+
+@media (max-width: 720px){
+  .nav-toggle{ display:inline-flex; }
+  .site-nav{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    align-items:stretch;
+    padding:10px 0 0;
+  }
+  .site-nav.open{ display:flex; }
+  .header-row{ flex-wrap:wrap; }
+}

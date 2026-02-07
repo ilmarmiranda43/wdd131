@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Project planning document for WDD 131 final website project." />
+  <title>WDD131 Project Site Plan | SP Code Trails</title>
+  <link rel="stylesheet" href="styles/siteplan.css" />
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="wrap header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="SP Code Trails logo" width="48" height="48" />
+      <div>
+        <h1>Website Planning Document</h1>
+        <p class="subtitle">WDD 131 • Week 05 • Project Site Plan</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>1) Site Name</h2>
+      <p><strong>SP Code Trails</strong></p>
+      <p>
+        I chose this name because the site guides beginners through practical “trails” of web learning
+        (HTML, CSS, and JavaScript) with short, hands-on challenges and a friendly tone.
+      </p>
+      <p class="mono">Optional domain idea: spcodetrails.org</p>
+    </section>
+
+    <section class="card">
+      <h2>2) Site Purpose</h2>
+      <p>
+        This site helps beginners practice web fundamentals with curated mini-guides and weekly challenges.
+        Visitors can explore learning guides, view upcoming practice events, and save favorite challenges.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>3) Scenarios</h2>
+      <ul>
+        <li>Which beginner JavaScript challenges can I do in 15 minutes and save as favorites?</li>
+        <li>How do I find the next practice session and sign up to receive reminders?</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4) Color Schema</h2>
+      <p>The site uses two main colors + neutrals.</p>
+      <div class="swatches">
+        <div class="swatch">
+          <div class="chip chip-primary" aria-hidden="true"></div>
+          <div>
+            <p><strong>Primary:</strong> #1F6FEB</p>
+            <p>Used for headings, buttons, links, and accents.</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="chip chip-secondary" aria-hidden="true"></div>
+          <div>
+            <p><strong>Secondary:</strong> #0E1116</p>
+            <p>Used for header/footer background and high-contrast text blocks.</p>
+          </div>
+        </div>
+      </div>
+      <p class="note"><strong>Note:</strong> This color schema is applied on this siteplan document, too.</p>
+    </section>
+
+    <section class="card">
+      <h2>5) Typography</h2>
+      <ul>
+        <li><strong>Headings:</strong> system-ui, -apple-system, Segoe UI, Roboto</li>
+        <li><strong>Body:</strong> system-ui, -apple-system, Segoe UI, Roboto</li>
+        <li><strong>Mono (code labels):</strong> ui-monospace, SFMono-Regular, Consolas</li>
+      </ul>
+      <p>Fonts are intentionally simple to keep performance strong and avoid external font requests.</p>
+    </section>
+
+    <section class="card">
+      <h2>6) Wireframes</h2>
+
+      <h3>Mobile Home (portrait)</h3>
+      <pre class="wire" aria-label="Mobile wireframe">
+[HEADER: logo + nav (hamburger)]
+[HERO image + headline]
+[CTA button]
+[SECTION: Featured guides (stacked cards)]
+[SECTION: Next event]
+[FOOTER: links + references]
+      </pre>
+
+      <h3>Desktop Home (wide)</h3>
+      <pre class="wire" aria-label="Desktop wireframe">
+[HEADER: logo | nav links]
+[HERO: image left | headline + CTA right]
+[GRID: 3 featured guide cards]
+[ROW: next event card | saved favorites card]
+[FOOTER]
+      </pre>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>Planning document for WDD 131. Update as your project evolves.</p>
+  </footer>
+</body>
+</html>

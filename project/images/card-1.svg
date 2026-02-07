@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Guide illustration">
+  <rect width="800" height="500" rx="26" fill="#0f172a"/>
+  <rect x="90" y="90" width="620" height="320" rx="18" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.12)"/>
+  <path d="M140 160h220" stroke="#1F6FEB" stroke-width="10" stroke-linecap="round"/>
+  <path d="M140 210h420" stroke="rgba(230,237,243,.28)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M140 260h360" stroke="rgba(230,237,243,.22)" stroke-width="10" stroke-linecap="round"/>
+</svg>

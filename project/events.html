@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Upcoming practice events and a sign-up form for reminders." />
+  <title>SP Code Trails | Events</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+  <script src="scripts/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="SP Code Trails logo" width="40" height="40" />
+        <span>SP Code Trails</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="guides.html">Guides</a>
+        <a class="active" href="events.html">Events</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <div class="section-head">
+      <h1>Events</h1>
+      <p class="muted">
+        Subscribe for reminders (stored locally). This form demonstrates valid HTML form practices.
+      </p>
+    </div>
+
+    <section class="split">
+      <article class="card">
+        <h2>Upcoming Sessions</h2>
+        <div id="events-list" aria-live="polite"></div>
+      </article>
+
+      <aside class="card">
+        <h2>Get Reminders</h2>
+
+        <form id="reminder-form" novalidate>
+          <label class="field">
+            <span>Full name</span>
+            <input name="fullname" id="fullname" type="text" autocomplete="name" required />
+          </label>
+
+          <label class="field">
+            <span>Email</span>
+            <input name="email" id="email" type="email" autocomplete="email" required />
+          </label>
+
+          <label class="field">
+            <span>Preferred topic</span>
+            <select name="topic" id="topic" required>
+              <option value="">Choose one</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="js">JavaScript</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Message (optional)</span>
+            <textarea name="message" id="message" rows="4" placeholder="What do you want to practice?"></textarea>
+          </label>
+
+          <button class="btn" type="submit">Save Reminder</button>
+          <p class="micro muted" id="form-status" role="status"></p>
+        </form>
+
+        <hr class="sep" />
+
+        <h3>Saved Reminder</h3>
+        <div id="saved-reminder" class="muted">No reminder saved yet.</div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>© <span id="year"></span> Ilmar Miranda • Brazil</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+</body>
+</html>

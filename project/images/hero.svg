@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420" role="img" aria-label="Abstract trail illustration">
+  <rect width="800" height="420" rx="28" fill="#0f172a"/>
+  <path d="M80 320c140-220 260-240 420-170s170 190 220 220" fill="none" stroke="#1F6FEB" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="180" cy="190" r="14" fill="#e6edf3"/>
+  <circle cx="420" cy="150" r="14" fill="#e6edf3"/>
+  <circle cx="650" cy="290" r="14" fill="#e6edf3"/>
+  <path d="M110 80h240" stroke="rgba(230,237,243,.25)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M110 110h340" stroke="rgba(230,237,243,.18)" stroke-width="8" stroke-linecap="round"/>
+</svg>

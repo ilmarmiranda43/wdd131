@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Guide illustration">
+  <rect width="800" height="500" rx="26" fill="#0f172a"/>
+  <g fill="rgba(31,111,235,.35)">
+    <rect x="120" y="120" width="220" height="150" rx="16"/>
+    <rect x="360" y="120" width="320" height="150" rx="16"/>
+    <rect x="120" y="290" width="560" height="110" rx="16" fill="rgba(255,255,255,.06)"/>
+  </g>
+</svg>
