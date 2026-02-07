@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review confirmation page for WDD 131 - Week 05 assignment.">
+  <title>Review Submitted</title>
+
+  <link rel="stylesheet" href="styles/form.css" />
+  <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Thank You!</h1>
+      <p class="subtitle">Your review has been submitted.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Submission Confirmation</h2>
+
+      <p class="counter">
+        Total reviews submitted on this browser: <strong><span id="reviewCount">0</span></strong>
+      </p>
+
+      <div class="summary">
+        <h3>Your Submitted Data</h3>
+        <dl id="reviewSummary"></dl>
+      </div>
+
+      <p class="actions">
+        <a class="btn link" href="form.html">Submit another review</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <p>
+        &copy; <span id="year"></span> Ilmar Miranda | Brazil
+      </p>
+      <p>
+        Last Modified: <span id="lastModified"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
