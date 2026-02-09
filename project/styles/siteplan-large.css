@@ -1,0 +1,40 @@
+
+@media (min-width: 800px) {
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand h1 {
+    font-size: 1.7rem;
+  }
+
+  .branches {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .colors {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .type-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wireframe-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+
+  .wf-hero-split {
+    grid-template-columns: 1.3fr 1fr;
+    align-items: stretch;
+  }
+
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

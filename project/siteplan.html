@@ -1,110 +1,233 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Project planning document for WDD 131 final website project.">
-  <meta name="author" content="Ilmar Miranda">
-  <title>WDD131 Project Site Plan | SP Code Trails</title>
-  <link rel="stylesheet" href="styles/siteplan.css" />
-  <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan | Explore Brazil - Ilmar Miranda</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Final Project Site Plan">
+    <meta name="author" content="Ilmar Miranda">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
 </head>
+
 <body>
-  <header class="wrap header">
-    <div class="brand">
-      <img src="images/logo.svg" alt="SP Code Trails logo" width="48" height="48" />
-      <div>
-        <h1>Website Planning Document</h1>
-        <p class="subtitle">WDD 131 • Week 05 • Project Site Plan</p>
-      </div>
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="brand">
+            <span class="brand-mark">🟩🟨🟦</span>
+            <div>
+                <h1>Explore Brazil</h1>
+                <p class="subtitle">WDD 131 - Week 5 Site Plan</p>
+            </div>
+        </div>
+
+        <nav class="site-nav">
+            <a href="#purpose">Purpose</a>
+            <a href="#audience">Audience</a>
+            <a href="#scenarios">Scenarios</a>
+            <a href="#sitemap">Site Map</a>
+            <a href="#branding">Branding</a>
+            <a href="#wireframes">Wireframes</a>
+        </nav>
     </div>
-  </header>
+</header>
 
-  <main class="wrap">
-    <section class="card">
-      <h2>1) Site Name</h2>
-      <p><strong>SP Code Trails</strong></p>
-      <p>
-        I chose this name because the site guides beginners through practical “trails” of web learning
-        (HTML, CSS, and JavaScript) with short, hands-on challenges and a friendly tone.
-      </p>
-      <p class="mono">Optional domain idea: spcodetrails.org</p>
+<main class="container">
+
+    <section class="card" id="purpose">
+        <h2>Site Name</h2>
+        <p><strong>Explore Brazil</strong></p>
+
+        <h2>Site Purpose</h2>
+        <p>
+            Explore Brazil is a cultural and travel information website designed to help visitors
+            discover Brazil’s major cities, natural landmarks, and cultural highlights.
+            <br>
+            The site will feature popular destinations, quick facts, and engaging content using
+            responsive design principles and JavaScript-driven interactions.
+        </p>
     </section>
 
-    <section class="card">
-      <h2>2) Site Purpose</h2>
-      <p>
-        This site helps beginners practice web fundamentals with curated mini-guides and weekly challenges.
-        Visitors can explore learning guides, view upcoming practice events, and save favorite challenges.
-      </p>
+    <section class="card" id="audience">
+        <h2>Target Audience</h2>
+        <ul>
+            <li>International tourists planning to visit Brazil</li>
+            <li>Brazilians living abroad who want a cultural reference website</li>
+            <li>Students and learners seeking an overview of Brazilian geography and culture</li>
+        </ul>
     </section>
 
-    <section class="card">
-      <h2>3) Scenarios</h2>
-      <ul>
-        <li>Which beginner JavaScript challenges can I do in 15 minutes and save as favorites?</li>
-        <li>How do I find the next practice session and sign up to receive reminders?</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>4) Color Schema</h2>
-      <p>The site uses two main colors + neutrals.</p>
-      <div class="swatches">
-        <div class="swatch">
-          <div class="chip chip-primary" aria-hidden="true"></div>
-          <div>
-            <p><strong>Primary:</strong> #1F6FEB</p>
-            <p>Used for headings, buttons, links, and accents.</p>
-          </div>
+    <section class="card" id="sitemap">
+        <h2>Site Map</h2>
+        <div class="sitemap">
+            <div class="node root">Home</div>
+            <div class="branches">
+                <div class="node">Destinations</div>
+                <div class="node">Culture</div>
+                <div class="node">Travel Tips</div>
+                <div class="node">Contact</div>
+            </div>
         </div>
-        <div class="swatch">
-          <div class="chip chip-secondary" aria-hidden="true"></div>
-          <div>
-            <p><strong>Secondary:</strong> #0E1116</p>
-            <p>Used for header/footer background and high-contrast text blocks.</p>
-          </div>
+        <p class="note">
+            The project will use consistent navigation. The Destinations page will include
+            destination cards and filtering interactions using JavaScript.
+        </p>
+    </section>
+
+    <section class="card" id="branding">
+        <h2>Color Scheme</h2>
+        <p>Palette inspired by the Brazilian flag and modern neutral tones.</p>
+
+        <div class="colors" role="list">
+            <div class="color" role="listitem">
+                <div class="chip primary"></div>
+                <div>
+                    <p class="color-title">Primary</p>
+                    <p class="color-meta">Brazil Green — <code>#009739</code></p>
+                </div>
+            </div>
+
+            <div class="color" role="listitem">
+                <div class="chip secondary"></div>
+                <div>
+                    <p class="color-title">Secondary</p>
+                    <p class="color-meta">Deep Blue — <code>#002776</code></p>
+                </div>
+            </div>
+
+            <div class="color" role="listitem">
+                <div class="chip accent"></div>
+                <div>
+                    <p class="color-title">Accent</p>
+                    <p class="color-meta">Yellow — <code>#FFDF00</code></p>
+                </div>
+            </div>
+
+            <div class="color" role="listitem">
+                <div class="chip muted-bg"></div>
+                <div>
+                    <p class="color-title">Muted Background</p>
+                    <p class="color-meta">Light Gray — <code>#F3F4F6</code></p>
+                </div>
+            </div>
+
+            <div class="color" role="listitem">
+                <div class="chip text"></div>
+                <div>
+                    <p class="color-title">Text</p>
+                    <p class="color-meta">Charcoal — <code>#1F2937</code></p>
+                </div>
+            </div>
         </div>
-      </div>
-      <p class="note"><strong>Note:</strong> This color schema is applied on this siteplan document, too.</p>
+
+        <h2>Typography</h2>
+        <div class="type-grid">
+            <div class="type-sample">
+                <h3 class="font-heading">Headings: Poppins</h3>
+                <p class="type-example font-heading">
+                    Explore Brazil — Discover destinations, culture, and travel experiences.
+                </p>
+            </div>
+
+            <div class="type-sample">
+                <h3 class="font-body">Body: Inter</h3>
+                <p class="type-example font-body">
+                    Inter provides excellent readability for paragraphs, UI labels, and cards across devices.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section class="card">
-      <h2>5) Typography</h2>
-      <ul>
-        <li><strong>Headings:</strong> system-ui, -apple-system, Segoe UI, Roboto</li>
-        <li><strong>Body:</strong> system-ui, -apple-system, Segoe UI, Roboto</li>
-        <li><strong>Mono (code labels):</strong> ui-monospace, SFMono-Regular, Consolas</li>
-      </ul>
-      <p>Fonts are intentionally simple to keep performance strong and avoid external font requests.</p>
+    <section class="card" id="wireframes">
+        <h2>Wireframes</h2>
+        <p class="note">
+            The wireframes below represent the <strong>Home page layout</strong> in mobile and desktop views.
+            These diagrams are for layout guidance only.
+        </p>
+
+        <div class="wireframe-grid">
+
+            <article class="wireframe">
+                <header class="wireframe-head">
+                    <h3>Mobile View</h3>
+                    <p>Single-column layout with stacked content.</p>
+                </header>
+
+                <div class="wf-box">
+                    <div class="wf-row">
+                        <div class="wf-block wf-logo">LOGO</div>
+                        <div class="wf-block wf-menu">☰</div>
+                    </div>
+                    <div class="wf-hero">HERO IMAGE</div>
+                    <div class="wf-text">Title + Introduction</div>
+                    <div class="wf-btn">CTA Button</div>
+                    <div class="wf-section-title">Featured Destinations</div>
+                    <div class="wf-cards one">
+                        <div class="wf-card">Card</div>
+                        <div class="wf-card">Card</div>
+                        <div class="wf-card">Card</div>
+                    </div>
+                    <div class="wf-section-title">Quick Facts</div>
+                    <div class="wf-facts">
+                        <div class="wf-pill">Area</div>
+                        <div class="wf-pill">Population</div>
+                        <div class="wf-pill">Capital</div>
+                        <div class="wf-pill">Currency</div>
+                    </div>
+                    <div class="wf-footer">FOOTER</div>
+                </div>
+            </article>
+
+            <article class="wireframe">
+                <header class="wireframe-head">
+                    <h3>Desktop View</h3>
+                    <p>Wide layout with hero split and three-column cards.</p>
+                </header>
+
+                <div class="wf-box">
+                    <div class="wf-row wide">
+                        <div class="wf-block wf-logo">LOGO</div>
+                        <div class="wf-block wf-nav">NAV LINKS</div>
+                    </div>
+
+                    <div class="wf-hero-split">
+                        <div class="wf-hero">HERO IMAGE</div>
+                        <div class="wf-side">
+                            <div class="wf-text">Title + Introduction</div>
+                            <div class="wf-btn">CTA Button</div>
+                        </div>
+                    </div>
+
+                    <div class="wf-section-title">Featured Destinations</div>
+                    <div class="wf-cards three">
+                        <div class="wf-card">Card</div>
+                        <div class="wf-card">Card</div>
+                        <div class="wf-card">Card</div>
+                    </div>
+
+                    <div class="wf-section-title">Quick Facts</div>
+                    <div class="wf-facts strip">
+                        <div class="wf-pill">Area</div>
+                        <div class="wf-pill">Population</div>
+                        <div class="wf-pill">Capital</div>
+                        <div class="wf-pill">Currency</div>
+                        <div class="wf-pill">Language</div>
+                    </div>
+
+                    <div class="wf-footer">FOOTER</div>
+                </div>
+            </article>
+
+        </div>
     </section>
 
-    <section class="card">
-      <h2>6) Wireframes</h2>
+</main>
 
-      <h3>Mobile Home (portrait)</h3>
-      <pre class="wire" aria-label="Mobile wireframe">
-[HEADER: logo + nav (hamburger)]
-[HERO image + headline]
-[CTA button]
-[SECTION: Featured guides (stacked cards)]
-[SECTION: Next event]
-[FOOTER: links + references]
-      </pre>
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> 2026 — Explore Brazil — Site Plan</p>
+    </div>
+</footer>
 
-      <h3>Desktop Home (wide)</h3>
-      <pre class="wire" aria-label="Desktop wireframe">
-[HEADER: logo | nav links]
-[HERO: image left | headline + CTA right]
-[GRID: 3 featured guide cards]
-[ROW: next event card | saved favorites card]
-[FOOTER]
-      </pre>
-    </section>
-  </main>
-
-  <footer class="wrap footer">
-    <p>Planning document for WDD 131. Update as your project evolves.</p>
-  </footer>
 </body>
 </html>
