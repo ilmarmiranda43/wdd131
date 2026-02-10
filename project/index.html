@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Brazil: destinations, trip planning tips, and a simple interactive planner to build your itinerary.">
+  <title>Explore Brazil | Home</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Explore Brazil</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="planner.html">Trip Planner</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="card">
+          <h1>Plan a memorable trip across Brazil</h1>
+          <p>
+            Brazil offers rainforest adventures, iconic beaches, historic cities, and world-class natural wonders.
+            Use the planner to build an itinerary and save favorites.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="planner.html">Build my itinerary</a>
+            <a class="btn" href="destinations.html">Browse destinations</a>
+          </div>
+          <p class="small" style="margin-top:.8rem">
+            Tip: On the Destinations page, add favorites (saved in your browser).
+          </p>
+        </div>
+
+        <figure>
+          <picture>
+            <source srcset="images/hero-brazil-small.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-brazil-medium.webp" media="(max-width: 900px)">
+            <img src="images/hero-brazil-large.webp" alt="Brazil landscape with vibrant scenery" width="1200" height="700">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What you can do here</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Choose destinations</h3>
+            <p class="small">
+              Filter places by region and travel style. Mark your favorites and keep them saved using localStorage.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Build an itinerary</h3>
+            <p class="small">
+              Pick days, budget, and vibe. The planner generates a suggested list using JavaScript logic.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Contact (demo form)</h3>
+            <p class="small">
+              Submit a message to test form validation and user feedback (no server needed).
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row-2">
+          <div class="card">
+            <h2>Quick travel notes</h2>
+            <p class="small">
+              Brazil is huge—distances can be long. Consider flying between far regions and using local transit inside cities.
+              Respect nature areas, follow trail guidance, and plan for different climates.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2>Contact</h2>
+            <form id="contactForm" novalidate>
+              <div class="row-2">
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+              </div>
+
+              <div style="margin-top:.8rem">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Write at least 10 characters..."></textarea>
+              </div>
+
+              <div style="margin-top:.8rem; display:flex; gap:.7rem; flex-wrap:wrap;">
+                <button class="btn primary" type="submit">Send</button>
+                <button class="btn" type="reset">Reset</button>
+              </div>
+
+              <div id="formFeedback" style="margin-top:.8rem" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <small>© <span id="year"></span> Ilmar Miranda • Brazil</small>
+      <a href="references.html">References</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

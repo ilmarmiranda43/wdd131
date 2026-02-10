@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Brazil destinations. Filter by region and travel style, and save favorites.">
+  <title>Explore Brazil | Destinations</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Explore Brazil</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html" aria-current="page">Destinations</a></li>
+          <li><a href="planner.html">Trip Planner</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="card">
+        <h1 style="margin:.1rem 0 .5rem;">Destinations</h1>
+        <p class="small" style="margin:0 0 1rem;">
+          Use the filters and add favorites (saved in your browser).
+        </p>
+
+        <div class="toolbar">
+          <div style="min-width: 220px;">
+            <label for="filterRegion">Region</label>
+            <select id="filterRegion">
+              <option value="all">All</option>
+              <option value="North">North</option>
+              <option value="Northeast">Northeast</option>
+              <option value="Center-West">Center-West</option>
+              <option value="Southeast">Southeast</option>
+              <option value="South">South</option>
+            </select>
+          </div>
+
+          <div style="min-width: 220px;">
+            <label for="filterVibe">Travel style</label>
+            <select id="filterVibe">
+              <option value="all">All</option>
+              <option value="Nature">Nature</option>
+              <option value="City">City</option>
+              <option value="Culture">Culture</option>
+              <option value="Wildlife">Wildlife</option>
+            </select>
+          </div>
+
+          <div class="notice" style="flex:1; min-width: 260px;">
+            <strong>Note</strong><br>
+            Favorites are stored with <code>localStorage</code>.
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <div id="destinationsList" class="grid" aria-live="polite"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <small>© <span id="year"></span> Ilmar Miranda • Brazil</small>
+      <a href="references.html">References</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

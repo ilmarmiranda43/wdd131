@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive trip planner for Brazil using JavaScript: choose days, budget, and vibe to generate a suggested itinerary.">
+  <title>Explore Brazil | Trip Planner</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Explore Brazil</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="planner.html" aria-current="page">Trip Planner</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="row-2">
+        <section class="card">
+          <h1 style="margin:.1rem 0 .5rem;">Trip Planner</h1>
+          <p class="small" style="margin:0 0 1rem;">
+            Generate a suggested plan (DOM events + arrays + conditionals + template literals).
+          </p>
+
+          <form id="planForm">
+            <div class="row-2">
+              <div>
+                <label for="days">How many days?</label>
+                <input id="days" name="days" type="number" min="1" max="21" value="6" required>
+              </div>
+
+              <div>
+                <label for="budget">Budget</label>
+                <select id="budget" name="budget">
+                  <option value="low">Low</option>
+                  <option value="mid" selected>Mid</option>
+                  <option value="high">High</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="margin-top:.8rem">
+              <label for="vibe">Main vibe</label>
+              <select id="vibe" name="vibe">
+                <option value="Nature" selected>Nature</option>
+                <option value="City">City</option>
+                <option value="Culture">Culture</option>
+                <option value="Wildlife">Wildlife</option>
+              </select>
+            </div>
+
+            <div style="margin-top:.9rem; display:flex; gap:.7rem; flex-wrap:wrap;">
+              <button class="btn primary" type="submit">Generate plan</button>
+              <a class="btn" href="destinations.html">Pick favorites</a>
+            </div>
+          </form>
+
+          <div id="planOutput" style="margin-top:1rem"></div>
+        </section>
+
+        <aside class="card">
+          <h2 style="margin:.1rem 0 .5rem;">How it works</h2>
+          <ul class="small" style="margin:.2rem 0 0; color: var(--muted);">
+            <li>Filters destination objects by your vibe.</li>
+            <li>Applies budget rules with conditional branching.</li>
+            <li>Builds HTML output with template literals.</li>
+            <li>Uses array methods like <code>filter</code>, <code>sort</code>, and <code>reduce</code>.</li>
+          </ul>
+
+          <div class="notice" style="margin-top:1rem;">
+            <strong>Accessibility</strong><br>
+            This page uses labels, keyboard-friendly controls, and clear contrast.
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <small>© <span id="year"></span> Ilmar Miranda • Brazil</small>
+      <a href="references.html">References</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
